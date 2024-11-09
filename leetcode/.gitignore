@@ -1,0 +1,17 @@
+﻿# Build output
+bin/
+obj/
+*.exe
+*.dll
+
+# IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Notes and drawings
+Notes/images/*.png
+Notes/images/*.jpg
