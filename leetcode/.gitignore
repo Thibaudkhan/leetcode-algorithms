@@ -15,3 +15,5 @@ obj/
 # Notes and drawings
 Notes/images/*.png
 Notes/images/*.jpg
+/obj/
+/bin/
