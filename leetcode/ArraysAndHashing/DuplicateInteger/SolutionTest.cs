@@ -1,17 +1,32 @@
 ﻿using Xunit;
 
-namespace DefaultNamespace
-{
-    public class SolutionTest
-    {
-        [Fact]
-        public void If_Duplicate_Value_Return_True()
-        {
-            // Correctement initialiser le tableau d'entiers
-            int[] nums = { 1, 2, 3, 3 };
+namespace LeetCode.ArraysAndHashing.DuplicateInteger;
 
-            // Vérifier si le résultat est correct
-            Assert.Equal(3, 3);
-        }
+public class SolutionTest
+{
+    private Solution _solution;
+
+    public SolutionTest()
+    {
+        _solution = new Solution();
+    }
+    
+    [Fact]
+    public void If_Duplicate_Value_Return_True()
+    {
+        int[] nums = { 1, 2, 3, 3 };
+
+        bool isDuplicate = _solution.Execute(nums,1);
+        
+        Assert.True(isDuplicate);
+    }
+    [Fact]
+    public void If_Not_Duplicate_Value_Return_False()
+    {
+        int[] nums = { 1, 2, 3 };
+
+        bool isDuplicate = _solution.Execute(nums,1);
+
+        Assert.False(isDuplicate);
     }
 }
