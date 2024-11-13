@@ -34,6 +34,9 @@ public class Solution : ISolution
         str = str.ToLowerInvariant();
         str = Regex.Replace(str, "[^a-z0-9]", "");
 
+        List<int> test = new List<int>();
+        test.Where(t => t > 1).ToList();
+        
         int left = 0;
         int right = str.Length - 1;
         
